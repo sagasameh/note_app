@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:note_app/cubits/add_notes_cubit/add_notes_cubit.dart';
 import 'package:note_app/custom_button.dart';
 import 'package:note_app/models/note_model.dart';
+import 'package:note_app/widgets/colors_list_view.dart';
 import 'package:note_app/widgets/custom_text_field.dart';
 
 class AddNotesForm extends StatefulWidget {
@@ -45,6 +46,7 @@ class _AddNotesFormState extends State<AddNotesForm> {
               subTitle = value;
             },
           ),
+          const ColorsListView(),
           const SizedBox(
             height: 32,
           ),
